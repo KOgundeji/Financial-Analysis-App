@@ -1,0 +1,39 @@
+.button {
+    -fx-background-color: rgb(44,78,120);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.table-cell {
+    -fx-alignment: BASELINE-RIGHT;
+}
+#homeMenuItems {
+    -fx-font-size: 15;
+    -fx-background-color: rgb(44,78,120);
+    -fx-padding: 2 2 2 2;
+    -fx-font-weight: bold;
+    -fx-opacity: 90%;
+}
+
+#optionItems {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-family: serif;
+
+}
+
+#anchor {
+    -fx-background-image: url(pictures/data.jpg);
+    -fx-background-size: cover;
+}
+
+#loginLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+#newAccountLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}

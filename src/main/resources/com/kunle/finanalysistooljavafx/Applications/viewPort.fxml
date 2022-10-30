@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.kunle.finanalysistooljavafx.ViewPortfolioController"
+            stylesheets="@styles.css"
+            style="-fx-background-color: whitesmoke">
+
+    <padding>
+        <Insets left="15.0" top="15.0" right="15.0"/>
+    </padding>
+
+    <top>
+        <Label text="   My portfolio" style="-fx-font-weight: bold; -fx-font-size:20"
+               BorderPane.alignment="BOTTOM_LEFT"/>
+    </top>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets top="20.0"/>
+            </padding>
+            <TableView fx:id="stockTable" style="-fx-table-cell-border-color: transparent;
+                                                 -fx-border-width: 1" >
+                <columns>
+                    <TableColumn fx:id="ticker" text="Symbol" style="-fx-alignment: BASELINE-LEFT;
+                                                                     -fx-font-weight: BOLD"/>
+                    <TableColumn fx:id="companyName" text="Name" style="-fx-alignment: BASELINE-LEFT"/>
+                    <TableColumn fx:id="price" text="Price"/>
+                    <TableColumn fx:id="change_per" text=" % change" />
+                    <TableColumn fx:id="change_abs" text="Change" />
+                    <TableColumn fx:id="shares" text="Shares" />
+                    <TableColumn fx:id="avg_cost" text="Avg. Cost" />
+                    <TableColumn fx:id="tot_cost" text="Total cost" />
+                    <TableColumn fx:id="market_value" text="Market Value" />
+                    <TableColumn fx:id="gain" text="Gain" />
+                    <TableColumn fx:id="days_gain" text="Day's Gain" />
+                    <TableColumn fx:id="return_per" text="Return" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="30">
+            <padding>
+                <Insets bottom="30.0" left="75.0"/>
+            </padding>
+            <effect>
+                <DropShadow color="grey" offsetX="5.0" offsetY="5.0"/>
+            </effect>
+            <Button fx:id="addButton" text="Add Stock" prefWidth="150" prefHeight="45" onAction="#addStock"/>
+            <Button fx:id="updateButton" text="Update a Stock" prefWidth="150" prefHeight="45"
+                    wrapText="true" textAlignment="CENTER" onAction="#updateStock"/>
+            <Button fx:id="deleteButton" text="Delete a Stock" prefWidth="150" prefHeight="45"
+                    wrapText="true" textAlignment="CENTER" onAction="#deleteStock"
+            style="-fx-background-color: FIREBRICK"/>
+            <Button fx:id="refreshButton" text="Refresh Portfolio" prefWidth="150" prefHeight="45"
+                    wrapText="true" onAction="#refreshPortfolio"/>
+        </HBox>
+    </bottom>
+
+
+</BorderPane>
