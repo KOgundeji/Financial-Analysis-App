@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FinAnalysisToolJAVAFX.AddStockController"
+            stylesheets="@styles.css">
+
+    <padding>
+        <Insets bottom="15.0" top="10.0"/>
+    </padding>
+
+    <top>
+        <VBox style="-fx-background-color: rgb(44,78,120)" fillWidth="false">
+            <Label text="  Add a stock" BorderPane.alignment="CENTER"
+                   prefHeight="60" style="-fx-text-fill: white; -fx-font-weight: bold;
+                                          -fx-font-size: 18" prefWidth="Infinity"/>
+        </VBox>
+    </top>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <Button text="Add Stock" prefHeight="35" prefWidth="150" defaultButton="true"
+                    onAction="#onAddStockClick" contentDisplay="RIGHT"/>
+            <Button text="Go Back" prefHeight="35" prefWidth="150" defaultButton="true"
+                    onAction="#onGoBackClick" contentDisplay="RIGHT"/>
+            <effect>
+                <DropShadow color="grey" offsetX="5.0" offsetY="5.0"/>
+            </effect>
+        </HBox>
+    </bottom>
+
+    <left>
+        <GridPane alignment="CENTER" vgap="1" hgap="10" style="-fx-font-size: 13">
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="10.0" top="20"/>
+            </padding>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Stock Symbol"
+                   style="-fx-font-weight: bold"/>
+            <TextField fx:id="create_ticker" GridPane.columnIndex="1" GridPane.rowIndex="0" prefHeight="30"
+                       prefWidth="50"
+                       promptText="ex. AMZN"/>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="10" text="Company Name"
+                   style="-fx-font-weight: bold"/>
+            <TextField fx:id="create_name" GridPane.columnIndex="1" GridPane.rowIndex="10" prefHeight="30"
+                       prefWidth="200"
+                       promptText="Name"/>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="20" text="No. of Shares"
+                   style="-fx-font-weight: bold"/>
+            <TextField fx:id="create_shares" GridPane.columnIndex="1" GridPane.rowIndex="20" prefHeight="30"
+                       prefWidth="200" promptText="# of shares"/>
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="30" text="Total Cost"
+                   style="-fx-font-weight: bold"/>
+            <TextField fx:id="create_cost" GridPane.columnIndex="1" GridPane.rowIndex="30"
+                           prefHeight="30" prefWidth="200" promptText="Total cost of shares"/>
+
+        </GridPane>
+    </left>
+
+</BorderPane>
+
+

@@ -77,7 +77,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.kunle.finanalysistooljavafx/com.kunle.finanalysistooljavafx.Applications.LoginApplication
+                                com.kunle.finanalysistooljavafx/FinAnalysisToolJAVAFX.Applications.LoginApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

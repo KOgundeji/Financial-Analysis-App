@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FinAnalysisToolJAVAFX.LoginController"
+            stylesheets="@styles.css"
+            prefWidth="250" prefHeight="300">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="10.0"/>
+    </padding>
+
+    <top>
+        <Label fx:id="loginLabel" text="Log in to your account" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <effect>
+                <DropShadow color="grey" offsetX="5.0" offsetY="5.0"/>
+            </effect>
+            <Button fx:id="submitButton" text="Submit" prefHeight="35" prefWidth="150" defaultButton="true"
+                    onAction="#LoginClick" />
+            <Button fx:id="createAccountButton" text="Sign Up" prefHeight="35" prefWidth="150"
+                    textAlignment="CENTER" onAction="#createAccountClick"/>
+        </HBox>
+    </bottom>
+
+    <center>
+        <GridPane gridLinesVisible="false" hgap="10" vgap="1" alignment="CENTER">
+            <Label GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="60" prefHeight="2"
+                   text="Username" />
+            <TextField fx:id="username" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                       prefHeight="25" prefWidth="250" />
+            <Label GridPane.rowIndex="7" GridPane.columnIndex="1" prefWidth="60" prefHeight="2"
+                   text="Password"/>
+            <PasswordField fx:id="password" GridPane.rowIndex="8" GridPane.columnIndex="1"
+                           prefHeight="25" prefWidth="250"/>
+            <CheckBox fx:id="rememberMeCheckBox" GridPane.rowIndex="9" GridPane.columnIndex="1"
+                      text="Remember me" prefHeight="25" onAction="#onCheckBoxClick"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

@@ -10,8 +10,8 @@ module com.kunle.finanalysistooljavafx {
     requires commons.math3;
     requires json.simple;
 
-    exports com.kunle.finanalysistooljavafx;
-    exports com.kunle.finanalysistooljavafx.Support;
-    exports com.kunle.finanalysistooljavafx.Applications;
+    exports FinAnalysisToolJAVAFX;
+    exports FinAnalysisToolJAVAFX.Support;
+    exports FinAnalysisToolJAVAFX.Applications;
 
 }
