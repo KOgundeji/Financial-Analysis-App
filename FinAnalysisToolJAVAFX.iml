@@ -51,7 +51,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Java JAR Files/poi-bin-5.2.3.lib/commons-math3-3.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../JavaJARFiles/mysql-connector-java-8.0.30.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -60,7 +60,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Java JAR Files/mysql-connector-java-8.0.30.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../JavaJARFiles/poi-bin-5.2.3.lib/commons-math3-3.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
